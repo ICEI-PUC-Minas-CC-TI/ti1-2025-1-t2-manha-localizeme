@@ -11,7 +11,7 @@ Informações básicas do projeto.
   * Gabriel Costa Lima (https://github.com/gcl32)
   * Guilherme Almeida Zuim (https://github.com/zoiacode)
   * Mateus Henrique Saturnino Gonçalves (XXXX)
-  * Nathan Barros de Carvalho (XXXX)
+  * Nathan Barros de Carvalho (https://github.com/nthapt)
 
 A documentação do projeto é estruturada da seguinte forma:
 
