@@ -7,7 +7,7 @@ Informações básicas do projeto.
 * **Membros da equipe:**
 
   * Ane Madjarian Viana (https://github.com/anemadjarian)
-  * [Beltrano](https://github.com/beltrano)
+  * Fernanda Mariana de Oliveira Santos (https://github.com/beltrano)
   * [Cicrano](https://github.com/cicrano)
 
 A documentação do projeto é estruturada da seguinte forma:
