@@ -2,13 +2,13 @@
 
 Informações básicas do projeto.
 
-* **Projeto:** [NOME DO PROJETO]
+* **Projeto:** LocalizeMe
 * **Repositório GitHub:** [LINK PARA O REPOSITÓRIO NO GITHUB]
 * **Membros da equipe:**
 
-  * [Fulano](https://github.com/fulano) ⚠️ EXEMPLO ⚠️
-  * [Beltrano](https://github.com/beltrano) ⚠️ EXEMPLO ⚠️
-  * [Cicrano](https://github.com/cicrano) ⚠️ EXEMPLO ⚠️
+  * Ane Madjarian Viana (https://github.com/anemadjarian)
+  * [Beltrano](https://github.com/beltrano)
+  * [Cicrano](https://github.com/cicrano)
 
 A documentação do projeto é estruturada da seguinte forma:
 
