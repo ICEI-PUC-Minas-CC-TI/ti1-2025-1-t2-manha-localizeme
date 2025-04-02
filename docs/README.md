@@ -3,12 +3,15 @@
 Informações básicas do projeto.
 
 * **Projeto:** LocalizeMe
-* **Repositório GitHub:** [LINK PARA O REPOSITÓRIO NO GITHUB]
+* **Repositório GitHub:** https://github.com/ICEI-PUC-Minas-CC-TI/ti1-2025-1-t2-manha-localizeme.git
 * **Membros da equipe:**
 
   * Ane Madjarian Viana (https://github.com/anemadjarian)
-  * Fernanda Mariana de Oliveira Santos (https://github.com/beltrano)
-  * [Cicrano](https://github.com/cicrano)
+  * Fernanda Mariana de Oliveira Santos (https://github.com/FeyreJeon)
+  * Gabriel Costa Lima (https://github.com/gcl32)
+  * Guilherme Almeida Zuim (github.com/zoiacode)
+  * Mateus Henrique Saturnino Gonçalves (XXXX)
+  * Nathan Barros de Carvalho (XXXX)
 
 A documentação do projeto é estruturada da seguinte forma:
 
