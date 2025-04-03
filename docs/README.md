@@ -261,32 +261,53 @@ O vídeo a seguir traz uma apresentação do problema que a equipe está tratand
 
 ## Funcionalidades
 
-Esta seção apresenta as funcionalidades da solução.Info
+Registro/Login, recomendação de preferências, busca com filtro, informações relevantes sobre o estabelecimento
 
-##### Funcionalidade 1 - Cadastro de Contatos ⚠️ EXEMPLO ⚠️
+##### Funcionalidade 1 - Registro
 
-Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
+Haverá uma tela de registro para cada usuário.
 
-* **Estrutura de dados:** [Contatos](#ti_ed_contatos)
+* **Estrutura de dados:** [Login](#ti_ed_registro)
 * **Instruções de acesso:**
   * Abra o site e efetue o login
-  * Acesse o menu principal e escolha a opção Cadastros
-  * Em seguida, escolha a opção Contatos
 * **Tela da funcionalidade**:
+![Tela de Funcionalidade](images/LoginPrint.png)
 
-![Tela de Funcionalidade](images/exemplo-funcionalidade.png)
+##### Funcionalidade 2 - Recomendação de preferências
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários quanto aos administradores da solução.
->
-> Inclua, para cada funcionalidade, itens como: (1) titulos e descrição da funcionalidade; (2) Estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.
+Haverão recomendações personalizadas de acordo com as preferências de cada usuário
+
+* **Estrutura de dados:** [Recomendações](#ti_ed_recomendacoes)
+* **Instruções de acesso:**
+  * Registre suas preferências e receba recomendações personalizadas
+* **Tela da funcionalidade**:
+![Tela de Funcionalidade](images/RecomendacoesPrint.png)
+
+##### Funcionalidade 1 - Busca
+
+Haverá uma divisão por categorias e busca por nome ou tema do local
+
+* **Estrutura de dados:** [Busca](#ti_ed_busca)
+* **Instruções de acesso:**
+  * Abra o site e busque um local
+* **Tela da funcionalidade**:
+![Tela de Funcionalidade](images/BuscaPrint.png)
+
+##### Funcionalidade 1 - Informações
+
+Haverá uma tela com informações relevantes para cada estabelecimento
+
+* **Estrutura de dados:** [Login](#ti_ed_informacoes)
+* **Instruções de acesso:**
+  * Abra o site, abra um local desejado e tenha acesso a todas as informacoes relevantes a respeito.
+* **Tela da funcionalidade**:
+![Tela de Funcionalidade](images/InformacoesPrint.png)
 
 ## Estruturas de Dados
 
-Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.Info
+Exemplo de um perfil criado com todos os dados informados, incluindo as categorias de interesse da pessoa.
 
-##### Estrutura de Dados - Contatos   ⚠️ EXEMPLO ⚠️
+##### Estrutura de Dados - Perfis
 
 Contatos da aplicação
 
@@ -294,36 +315,29 @@ Contatos da aplicação
   {
     "id": 1,
     "nome": "Leanne Graham",
-    "cidade": "Belo Horizonte",
-    "categoria": "amigos",
     "email": "Sincere@april.biz",
+    "idade": "25",
     "telefone": "1-770-736-8031",
-    "website": "hildegard.org"
+    "cidade": "Belo Horizonte",
+    "categorias": "tematico",
   }
-  
 ```
 
-##### Estrutura de Dados - Usuários  ⚠️ EXEMPLO ⚠️
+##### Estrutura de Dados - Usuários
 
 Registro dos usuários do sistema utilizados para login e para o perfil do sistema
 
 ```json
   {
     id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    email: "admin@abc.com",
+    email: "joana@abc.com",
     id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    login: "admin",
-    nome: "Administrador do Sistema",
+    login: "user",
+    nome: "Usuário do Sistema",
     senha: "123"
   }
 ```
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente as estruturas de dados utilizadas na solução tanto para dados utilizados na essência da aplicação quanto outras estruturas que foram criadas para algum tipo de configuração
->
-> Nomeie a estrutura, coloque uma descrição sucinta e apresente um exemplo em formato JSON.
->
 > **Orientações:**
 >
 > * [JSON Introduction](https://www.w3schools.com/js/js_json_intro.asp)
@@ -335,20 +349,16 @@ Esta seção apresenta os módulos e APIs utilizados na solução
 
 **Images**:
 
-* Unsplash - [https://unsplash.com/](https://unsplash.com/) ⚠️ EXEMPLO ⚠️
+* Unsplash - [https://unsplash.com/](https://unsplash.com/) 
 
 **Fonts:**
 
-* Icons Font Face - [https://fontawesome.com/](https://fontawesome.com/) ⚠️ EXEMPLO ⚠️
+* Icons Font Face - [https://fontawesome.com/](https://fontawesome.com/) 
 
 **Scripts:**
 
-* jQuery - [http://www.jquery.com/](http://www.jquery.com/) ⚠️ EXEMPLO ⚠️
-* Bootstrap 4 - [http://getbootstrap.com/](http://getbootstrap.com/) ⚠️ EXEMPLO ⚠️
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente os módulos e APIs utilizados no desenvolvimento da solução. Inclua itens como: (1) Frameworks, bibliotecas, módulos, etc. utilizados no desenvolvimento da solução; (2) APIs utilizadas para acesso a dados, serviços, etc.
+* jQuery - [http://www.jquery.com/](http://www.jquery.com/) 
+* Bootstrap 4 - [http://getbootstrap.com/](http://getbootstrap.com/) 
 
 # Referências
 
