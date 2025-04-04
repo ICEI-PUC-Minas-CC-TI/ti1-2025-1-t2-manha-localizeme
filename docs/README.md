@@ -358,13 +358,6 @@ Esta seção apresenta os módulos e APIs utilizados na solução
 
 As referências utilizadas no trabalho foram:
 
-* SOBRENOME, Nome do autor. Título da obra. 8. ed. Cidade: Editora, 2000. 287 p ⚠️ EXEMPLO ⚠️
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
->
-> **Orientações**:
->
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+* SEBRAE. Os principais desafios de bares e restaurantes com a retomada do turismo. Sebrae, 2025. Disponível em: https://sebrae.com.br/sites/PortalSebrae/artigos/os-principais-desafios-de-bares-e-restaurantes-com-retomada-do-turismo,ec33102229056810VgnVCM1000001b00320aRCRD. Acesso em: 4 abr. 2025.
+* UNIMED. A importância do convívio social para a saúde mental. Unimed, 2025. Disponível em: https://www.unimed.coop.br/site/web/amparo/-/a-importancia-do-convivio-social-para-a-saude-mental#:~:text=O%20conv%C3%ADvio%20social%20tem%20um,essenciais%20para%20nossa%20sa%C3%BAde%20mental. Acesso em: 4 abr. 2025.
+* G1. Golpistas aproveitam férias para criar páginas falsas de restaurantes e passeios na internet. Bom Dia Brasil, 18 jul. 2023. Disponível em: https://g1.globo.com/bom-dia-brasil/noticia/2023/07/18/golpistas-aproveitam-ferias-para-criar-paginas-falsas-de-restaurantes-e-passeios-na-internet.ghtml. Acesso em: 4 abr. 2025.
