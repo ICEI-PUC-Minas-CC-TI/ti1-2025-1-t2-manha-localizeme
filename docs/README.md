@@ -65,14 +65,14 @@ Vamos mergulhar no universo dos usuários para descobrir:
 Na **Etapa de Entendimento**, utilizaremos a metodologia **Design Thinking** para compreender profundamente o problema. Durante esse processo, vamos criar e refinar as ferramentas abaixo:
 
 ### 1. Matriz CSD
-[![copiar e colar quando eu for colocar no GitHu](https://miro.com/app/board/uXjVIVEqQjM=/)
+[![matriz.png](../../../../Desktop/matriz.png)](https://miro.com/app/board/uXjVIVEqQjM=/)
 
 ### 2. Mapa de Stakeholders
-[![copiar e colar quando eu for colocar no GitHu](https://miro.com/app/board/uXjVIVEqQjM=/)
+[![stak.png](../../../../Desktop/stak.png)](https://miro.com/app/board/uXjVIVEqQjM=/)
 
 #### Detalhes Importantes:
 - **Entrevistados**:  (4 pessoas, 3 donos de bares)
-- **Ferramenta**: [Formulário Online](https://forms.google.com/link_do_seu_form)
+- **Ferramenta**: [Notes]
 - **Período de coleta**: 17/Abril/2025
 
 ---
@@ -203,7 +203,7 @@ Na **Etapa de Entendimento**, utilizaremos a metodologia **Design Thinking** par
 
 ### Personas
 
-[![Foto da Persona copiar e colar quando eu for colocar no GitHub ](https://miro.com/app/board/uXjVIVEqQjM=/)]
+[![persona.png](../../../../Desktop/persona.png)](https://miro.com/app/board/uXjVIVEqQjM=/)]
 
 #### 📍 **Perfil Cris**
 
