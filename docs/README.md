@@ -52,35 +52,188 @@ Existem três perfis para o público-alvo:
 
 # Product Discovery
 
+Vamos mergulhar no universo dos usuários para descobrir:
+
+- O que realmente importa para quem busca bares em BH
+- Os desafios enfrentados pelos donos de estabelecimentos
+- Como criar uma solução eficaz que resolva esses problemas na prática
+
+---
+
 ## Etapa de Entendimento
 
-**✳️✳️✳️ APRESENTE OS ARTEFATOS DA ETAPA  ✳️✳️✳️**
+Na **Etapa de Entendimento**, utilizaremos a metodologia **Design Thinking** para compreender profundamente o problema. Durante esse processo, vamos criar e refinar as ferramentas abaixo:
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nessa etapa, vamos trabalhar com a metdologia de Design Thinking para compreender com maior profundidade o problema a ser tratado. Nesse processo, vamos elaborar:
->
-> * **Matriz CSD**: também conhecida por Matriz de Alinhamento, é uma ferramenta utilizada no Design Thinking para organizar informações e facilitar o processo de tomada de decisão e solução de problemas;
-> * **Mapa de stakeholders**: ferramenta que nos permite compreender o grupo de pessoas e entidades que devemos estudar e conversar para entender mais sobre o problema
-> * **Entrevistas qualitativas**: série de entrevistas qualitativas para validar suposições e solucionar as dúvidas com as principais pessoas envolvidas;
-> * **Highlights de pesquisa**: um compilado do levantamento realizado por meio das entrevistas.
+### 1. Matriz CSD
+[![copiar e colar quando eu for colocar no GitHu](https://miro.com/app/board/uXjVIVEqQjM=/)
 
+### 2. Mapa de Stakeholders
+[![copiar e colar quando eu for colocar no GitHu](https://miro.com/app/board/uXjVIVEqQjM=/)
+
+#### Detalhes Importantes:
+- **Entrevistados**:  (4 pessoas, 3 donos de bares)
+- **Ferramenta**: [Formulário Online](https://forms.google.com/link_do_seu_form)
+- **Período de coleta**: 17/Abril/2025
+
+---
+
+## Entrevistas Qualitativas
+
+### Clientes
+
+**Helena** (Estudante de Psicologia)
+
+- **Qual a sua maior dificuldade em encontrar bares da sua preferência?**
+  - *"No início, quando cheguei a BH, não tive problemas. Porém, depois de um tempo, comecei a procurar lugares diferentes que não eram recomendados por pessoas próximas. Encontrei dificuldades em achar informações corretas, como fotos do ambiente, cardápio atualizado, horários de funcionamento e avaliações de outros clientes."*
+
+- **Você sente falta de algo ao utilizar essa ferramenta?**
+  - *"Sim. Falta um único lugar que centralize tudo o que eu procuro. Eu me irrito ao ter que usar vários aplicativos para encontrar informações sobre um estabelecimento."*
+
+- **Qual ferramenta você usa na hora de buscar um bar?**
+  - *"Usava TikTok para vídeos de recomendações, Instagram para ver fotos e o Google Maps para avaliações, endereço e criar listas de lugares."*
+
+---
+
+**Gabriel** (Estudante de Ciência da Computação)
+
+- **Qual a sua maior dificuldade em encontrar bares da sua preferência?**
+  - *"A principal dificuldade é não encontrar lugares divididos por categorias, onde todas as informações sejam claras, para não perder tempo procurando."*
+
+- **Você sente falta de algo ao utilizar essa ferramenta?**
+  - *"Sim, sinto falta de integração entre os aplicativos. Não há uma ferramenta que reúna todas as informações de forma clara e concisa."*
+
+- **Qual ferramenta você usa na hora de buscar um bar?**
+  - *"Recomendações de amigos, Ifood e Google Maps."*
+
+---
+
+**João e Roberta** (Estudantes de Ciência da Computação)
+
+- **Qual a sua maior dificuldade em encontrar bares da sua preferência?**
+  - *"Usamos Google Maps, Instagram e recomendações de pessoas."*
+
+- **Você sente falta de algo ao utilizar essa ferramenta?**
+  - *"Fotos falsas que não representam fielmente o que é mostrado nas redes sociais."*
+
+- **Qual ferramenta você usa na hora de buscar um bar?**
+  - *"Informações atualizadas sobre o local e localização."*
+
+---
+
+### Donos de Bares
+
+**Denilson** (Dono do "Coreu Bar")
+
+- **Qual a sua maior dificuldade em encontrar clientes?**
+  - *"Atualmente, não enfrento dificuldades em encontrar clientes."*
+
+- **Você sente falta de algo na plataforma que usa?**
+  - *"Sinto falta de uma coordenação mais eficaz das redes sociais, devido ao uso de uma empresa terceirizada."*
+
+- **Você utiliza alguma plataforma para encontrar novos clientes?**
+  - *"Sim, uso Instagram."*
+
+---
+
+**Everton** (Dono do "Tacos")
+
+- **Qual a sua maior dificuldade em encontrar clientes?**
+  - *"Nunca tive dificuldades para encontrar clientes."*
+
+- **Você sente falta de alguma ferramenta?**
+  - *"Falta receber feedbacks e críticas dos clientes."*
+
+- **Você utiliza alguma plataforma para encontrar novos clientes?**
+  - *"Sim, uso Instagram e Facebook, com suporte de uma empresa terceirizada."*
+
+---
+
+**Hugo** (Dono do "A Granel")
+
+- **Qual a sua maior dificuldade em encontrar clientes?**
+  - *"Não tive dificuldades."*
+
+- **Você sente falta de alguma ferramenta?**
+  - *"Sinto falta de feedbacks mais diretos."*
+
+- **Você utiliza alguma plataforma para encontrar novos clientes?**
+  - *"Uso Instagram e apoio de uma empresa terceirizada."*
+
+---
+
+## Highlights da Pesquisa
+
+- **Principais queixas**:
+  - Falta de informações sobre preços e condições do local
+  - Lugares lotados ou com atendimento ruim
+  - Falta de feedback dos clientes
+
+---
 ## Etapa de Definição
+
+### Dores Principais
+
+---
+
+#### **Clientes**
+
+1. **Informações desencontradas/dispersas**  
+   A falta de centralização e organização das informações disponíveis causa frustração na hora da busca.
+
+2. **Falta de transparência**  
+   Fotos imprecisas ou desatualizadas e preços escondidos dificultam a decisão dos consumidores.
+
+3. **Dificuldade em filtrar por preferências**  
+   Os clientes não conseguem facilmente filtrar os bares de acordo com suas preferências pessoais (ex: ambiente, preço, tipo de comida).
+
+---
+
+#### **Donos de Bares**
+
+1. **Gestão ineficiente de redes sociais**  
+   A falta de uma estratégia bem definida para as redes sociais compromete o alcance e o engajamento.
+
+2. **Pouco feedback qualificado**  
+   Há uma escassez de comentários úteis e construtivos que ajudem a melhorar os serviços e a experiência do cliente.
+
+3. **Dificuldade em destacar diferenciais**  
+   Não há uma plataforma eficaz que ajude os donos a se diferenciarem no mercado competitivo de bares, perdendo oportunidades de atrair clientes.
+
+---
 
 ### Personas
 
-**✳️✳️✳️ APRESENTE OS DIAGRAMAS DE PERSONAS ✳️✳️✳️**
+[![Foto da Persona copiar e colar quando eu for colocar no GitHub ](https://miro.com/app/board/uXjVIVEqQjM=/)]
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
->
-> **Orientações**:
->
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Criar personas (Hotmart)](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
+#### 📍 **Perfil Cris**
+
+| **Nome**    | Cris                         |
+|-------------|------------------------------|
+| **Idade**   | 30 anos                      |
+| **Ocupação**| Professora                   |
+| **Hobbies** | Sair e beber                 |
+| **Personalidade** | Festeira, conectada, extrovertida |
+| **Sonhos**  | Viajar pelo mundo            |
+
+#### 📍 **Perfil Miguel**
+
+| **Nome**    | Miguel                       |
+|-------------|------------------------------|
+| **Idade**   | 24 anos                      |
+| **Ocupação**| Designer                     |
+| **Hobbies** | Jogos de tabuleiro           |
+| **Personalidade** | Introvertido, calmo, paciente |
+| **Sonhos**  | Viver uma vida confortável e estável |
+
+#### 📍 **Perfil Adenor**
+
+| **Nome**    | Adenor                       |
+|-------------|------------------------------|
+| **Idade**   | 58 anos                      |
+| **Ocupação**| Dono de bar                  |
+| **Hobbies** | Jogar sinuca                 |
+| **Personalidade** | Carismático, organizado, proativo |
+| **Sonhos**  | Se aposentar com uma boa reserva e ver os netos crescerem |
 
 # Product Design
 
