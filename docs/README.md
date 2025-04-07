@@ -10,7 +10,7 @@ Informações básicas do projeto.
   * Fernanda Mariana de Oliveira Santos (https://github.com/FeyreJeon)
   * Gabriel Costa Lima (https://github.com/gcl32)
   * Guilherme Almeida Zuim (https://github.com/zoiacode)
-  * Mateus Henrique Saturnino Gonçalves (XXXX)
+  * Mateus Henrique Saturnino Gonçalves (https://github.com/mateusatus)
   * Nathan Barros de Carvalho (https://github.com/nthapt)
 
 A documentação do projeto é estruturada da seguinte forma:
