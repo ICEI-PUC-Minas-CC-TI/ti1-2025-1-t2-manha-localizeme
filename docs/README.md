@@ -245,29 +245,23 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 | EU COMO...`PERSONA` | QUERO/PRECISO ...`FUNCIONALIDADE`        | PARA ...`MOTIVO/VALOR`               |
 | --------------------- | ------------------------------------------ | -------------------------------------- |
-| Usuário do sistema   | Registrar minhas tarefas ⚠️ EXEMPLO ⚠️ | Não esquecer de fazê-las             |
-| Administrador         | Alterar permissões ⚠️ EXEMPLO ⚠️      | Permitir que possam administrar contas |
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
->
-> **Orientações**:
->
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
+| Estrangeiro   | Saber onde passar a minha noite confortavelmente e comer bem. | Quero conhecer o que aquele local pode me proporcionar.
+| Estrangeiro   | Me divertir na cidade em que estiver viajando. | Guardar boas memórias.
+| Estrangeiro   | Informações detalhadas sobre a localização de estabelecimentos.  | Encontrar o local que desejo com facilidade.
+| Estrangeiro   | Imagens dos estabelecimentos. | Saber onde posso tirar boas fotos para compartilhar com minha família e meus amigos.
+| Pessoa Local  | Avaliação e comentários de outros usuários. | Saber como foi a experiência dos outros clientes
+| Pessoa Local  | Localização detalhando pontos próximos. | Saber a maneira mais fácil de chegar no local.
+| Turista       | informações detalhadas sobre os cardápios e informações do local. |  explorar novos lugares agradáveis e viver experiências boas.
+| Estudante Intercambista   | Recomendações e avaliações dos locais. | Garantir uma boa experiência e evitar frustrações ao chegar no local.
+| Estabelecimento  | Um aplicativo de fácil manutenção que me conecte com meu público alvo. | Gerar mais clientes e receita para minha empresa.
+| Estabelecimento   | Um aplicativo que eu possa deixar todos os dados importantes disponíveis e de fácil acesso.  | Deixar o meu possível cliente mais confortável de vir ao meu estabelecimento
+| Dono do Estabelecimento  |Um site que facilite a minha comunicação com os meus clientes e forneça informações precisas sobre meu estabelecimento. | Para atrair mais clientes e aumentar os lucros da minha empresa.
+| Dono do Estabelecimento   | Um site voltado a exibição de todos os dados do meu estabelecimento, como cardápio e horário de funcionamento de forma lúdica e atrativa para meus clientes. |Para atrair clientes de uma maneira descontraída e espontânea.
 
 ## Proposta de Valor
-
-**✳️✳️✳️ APRESENTE O DIAGRAMA DA PROPOSTA DE VALOR PARA CADA PERSONA ✳️✳️✳️**
-
-##### Proposta para Persona XPTO ⚠️ EXEMPLO ⚠️
-
-![Exemplo de proposta de valor](images/exemplo-proposta-valor.png)
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> O mapa da proposta de valor é uma ferramenta que nos ajuda a definir qual tipo de produto ou serviço melhor atende às personas definidas anteriormente.
+![cris](https://github.com/user-attachments/assets/6768a99d-268f-4be2-8941-71287fe85adc)
+![Miguel](https://github.com/user-attachments/assets/cf221ffe-12a0-4642-966a-58b50127f175)
+![Adenor](https://github.com/user-attachments/assets/855b6c20-46fe-471c-aadf-aabc80113068)
 
 ## Requisitos
 
@@ -277,31 +271,22 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 | ID     | Descrição do Requisito                                   | Prioridade |
 | ------ | ---------------------------------------------------------- | ---------- |
-| RF-001 | Permitir que o usuário cadastre tarefas ⚠️ EXEMPLO ⚠️ | ALTA       |
-| RF-002 | Emitir um relatório de tarefas no mês ⚠️ EXEMPLO ⚠️ | MÉDIA     |
+| RF-001 | O sistema deve conter um espaço de comentários ao público;| ALTA  |
+| RF-002 | Deve conter informações sobre o local, incluindo fotos verídicas; ⚠️ EXEMPLO ⚠️ | ALTA  |
+| RF-003 | O site será estruturado para um entendimento fácil e rápido; | ALTA  |
+| RF-004 | O site terá uma lista para que a pessoa possa verificar onde ela foi e ainda quer ir; | ALTA  |
+| RF-005 | O site terá recomendações personalizadas para cada persona e perfil de cliente (a partir de um formulário de preferências que o cliente irá responder); | ALTA  |
+| RF-006 | O site terá uma divisão por categorias para ficar mais fácil a localização do estabelecimento desejado (algum tipo de filtro para cada lugar). | ALTA  |
 
 ### Requisitos não Funcionais
 
 | ID      | Descrição do Requisito                                                              | Prioridade |
 | ------- | ------------------------------------------------------------------------------------- | ---------- |
-| RNF-001 | O sistema deve ser responsivo para rodar em um dispositivos móvel ⚠️ EXEMPLO ⚠️ | MÉDIA     |
-| RNF-002 | Deve processar requisições do usuário em no máximo 3s ⚠️ EXEMPLO ⚠️          | BAIXA      |
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Os requisitos de um projeto são classificados em dois grupos:
->
-> - [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
->   correspondem a uma funcionalidade que deve estar presente na plataforma (ex: cadastro de usuário).
-> - [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
->   correspondem a uma característica técnica, seja de usabilidade, desempenho, confiabilidade, segurança ou outro (ex: suporte a dispositivos iOS e Android).
->
-> Lembre-se que cada requisito deve corresponder à uma e somente uma característica alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.
->
-> **Orientações**:
->
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+| RNF-001 | O site precisa ter um sistema de segurança e de login para confidencialidade dos dados;| MÉDIA|
+| RNF-002 |O site precisa estar online 24/07;| BAIXA |
+| RNF-003 | O site precisa estar linkado com outros meios, como por exemplo o Instagram, para maior agilidade na atualização de informações; | MÉDIA     |
+| RNF-004 | O site devera ser publicado em um ambiente acessível publicamente na Internet;| MÉDIA |
+| RNF-005 | O site sera desenvolvido primeiramente para Desktop. | MÉDIA |
 
 ## Projeto de Interface
 
@@ -311,24 +296,14 @@ Artefatos relacionados com a interface e a interacão do usuário na proposta de
 
 Estes são os protótipos de telas do sistema.
 
-**✳️✳️✳️ COLOQUE AQUI OS PROTÓTIPOS DE TELAS COM TÍTULO E DESCRIÇÃO ✳️✳️✳️**
+**✳️✳️✳️ Home Page ✳️✳️✳️**
 
-##### TELA XPTO ⚠️ EXEMPLO ⚠️
+Home Page
 
-Descrição para a tela XPTO
+Homepage com botões de categorias, populares, Novidades, Busca, Perfil, salvar, opção de local e Carrossel
 
-![Exemplo de wireframe](images/exemplo-wireframe.png)
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante ao layout de elementos fundamentais na interface.
->
-> **Orientações**:
->
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
+![Home Page](https://github.com/user-attachments/assets/c9cdfd02-198f-4cef-9676-584ac684eb7a)
+![Carrossel](https://github.com/user-attachments/assets/d56a5856-60a2-4d45-8263-f33c2ee322d2)
 
 ### User Flow
 
