@@ -46,9 +46,9 @@ Já para os moradores da cidade, sair para socializar não é apenas um lazer, m
 ## Público-Alvo
 
 Existem três perfis para o público-alvo:
-1- Donos de estabelecimentos, que administrarão as páginas de seus bares: possuem pouco conhecimento sobre tecnologia, exige um software fácil e prático para entendimento;
-2- Pessoas locais, querem conhecer estabelecimentos novos;
-3-Turistas: pouco ou nenhum conhecimento sobre a cidade de Belo Horizonte.
+1. Donos de estabelecimentos, que administrarão as páginas de seus bares: possuem pouco conhecimento sobre tecnologia, exige um software fácil e prático para entendimento;
+2. Pessoas locais, querem conhecer estabelecimentos novos;
+3. Turistas: pouco ou nenhum conhecimento sobre a cidade de Belo Horizonte.
 
 # Product Discovery
 
