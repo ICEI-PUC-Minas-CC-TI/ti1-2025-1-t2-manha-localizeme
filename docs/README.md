@@ -272,7 +272,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | ID     | Descrição do Requisito                                   | Prioridade |
 | ------ | ---------------------------------------------------------- | ---------- |
 | RF-001 | O sistema deve conter um espaço de comentários ao público;| ALTA  |
-| RF-002 | Deve conter informações sobre o local, incluindo fotos verídicas; ⚠️ EXEMPLO ⚠️ | ALTA  |
+| RF-002 | Deve conter informações sobre o local, incluindo fotos verídicas; | ALTA  |
 | RF-003 | O site será estruturado para um entendimento fácil e rápido; | ALTA  |
 | RF-004 | O site terá uma lista para que a pessoa possa verificar onde ela foi e ainda quer ir; | ALTA  |
 | RF-005 | O site terá recomendações personalizadas para cada persona e perfil de cliente (a partir de um formulário de preferências que o cliente irá responder); | ALTA  |
@@ -313,11 +313,7 @@ Homepage com botões de categorias, populares, Novidades, Busca, Perfil, salvar,
 
 **✳️✳️✳️ COLOQUE AQUI UM IFRAME COM SEU PROTÓTIPO INTERATIVO ✳️✳️✳️**
 
-✅ [Protótipo Interativo (MarvelApp)](https://marvelapp.com/prototype/4hd6091?emb=1&iosapp=false&frameless=false)  ⚠️ EXEMPLO ⚠️
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Um protótipo interativo apresenta o projeto de interfaces e permite ao usuário navegar pelas funcionalidades como se estivesse lidando com o software pronto. Utilize as mesmas ferramentas de construção de wireframes para montagem do seu protótipo interativo. Inclua o link para o protótipo interativo do projeto.
+https://marvelapp.com/adc9haa
 
 # Metodologia
 
