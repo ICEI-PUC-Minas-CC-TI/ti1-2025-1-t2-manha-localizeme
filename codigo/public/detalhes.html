@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detalhes do Bar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container my-4" id="detalhes-container">
+        <!-- Conteúdo JavaScript -->
+    </main>
+    <script src="app.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const id = parseInt(params.get("id"));
+        const bar = dados.bares.find(b => b.id === id);
+        const container = document.getElementById('detalhes-container');
+        if (bar) {
+            container.innerHTML = `
+            <section class="mb-5">
+                <p><strong>Descrição:</strong> ${dados.descricao}</p>
+                <p><strong>Categoria:</strong> ${dados.categoria}</p>
+                <p><strong>Avaliação:</strong> ${dados.avaliacao} ⭐</p>
+                <p><strong>Cardápio:</strong> ${bar.cardapio}</p>
+                <p><strong>Instagram:</strong> ${bar.instagram} </p>
+                <p><strong>Endereço:</strong> ${bar.endereco} </p>
+                <p><strong>Maps:</strong> ${bar.Maps} </p>
+            </section>
+
+            <section>
+                <h4>Fotos do Bar</h4>
+                <div class="row">
+                    ${bar.imagens_complementares.map(img => `
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img src="${img.src}" class="card-img-top" alt="${img.descricao}">
+                            <div class="card-body">
+                                <p class="card-text">${img.descricao}</p>
+                            </div>
+                        </div>
+                    </div>
+                    `).join("")}
+                </div>
+            </section>
+      `;
+        } else {
+        container.innerHTML = `<p>Bar não encontrado.</p>`;
+        }
+    </script>
+</body>
+</html>
