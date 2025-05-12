@@ -19,6 +19,21 @@ body {
     border-radius: 10px;
 }
 
+/* Cards */
+.card {
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     .carousel-item {
