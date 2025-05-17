@@ -1,0 +1,283 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #121717;
+    color: #ffffff;
+    margin: 0;
+    padding: 80px;
+    
+  }
+  
+  /* Título do Restaurante */
+  .card-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 1.5rem 0;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    position: relative;
+    padding-bottom: 1rem;
+  }
+  
+  .card {
+    background: none; /* Garante que não há fundo */
+    border: none; 
+    color: #ffffff;
+  }
+  
+  .card-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: #cf3e00;
+  }
+  
+  /* Informações do Restaurante */
+  .restaurant-info {
+    padding: 2rem 2rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    margin: 10px;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin: 10px;
+  }
+  
+  .info-item::before {
+    content: '✓';
+    color: #cf3e00;
+    margin-right: 0.8rem;
+    font-weight: bold;
+  }
+  
+  /* Imagem Principal */
+  .card-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Conteúdo e Mapa */
+  .card-content-and-maps {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2rem 2rem;
+    color: #ffffff;
+  }
+  
+  .card-content {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 2rem;
+    color: #ffffff;
+  }
+  
+  .card-text {
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+  }
+  
+  /* Mapa */
+  .maps-container {
+    flex: 1;
+    min-width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+  
+  }
+  
+  /* Links */
+  .card a {
+    color: #cf3e00;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+    display: inline-block;
+    margin-right: 1.5rem;
+  }
+  
+  .card a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  /* Seção de Avaliação */
+  .rating {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    color: #ffffff;
+  }
+  
+  .rating-stars {
+    color: #ffc107;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+  }
+  
+  /* Botões de navegação */
+  /* Carrossel */
+  .carrossel-container {
+    max-width: 400px; /* tamanho fixo e quadrado */
+    height: 300px;
+    margin: auto; /* centraliza horizontalmente */
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #1a1a1a;
+  }
+  
+  .carrossel-title {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Imagens do carrossel */
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* garante o preenchimento */
+  }
+  
+  .carrossel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cf3e00;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .carrossel-btn:hover {
+    background: #ffffff;
+    color: #121717;
+  }
+  
+  .carrossel-btn.prev {
+    left: 0;
+  }
+  
+  .carrossel-btn.next {
+    right: 0;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .carrossel-container {
+      padding: 0 2rem;
+    }
+  
+    .carrossel-img {
+      min-width: 250px;
+      height: 180px;
+    }
+  
+    .carrossel-btn {
+      width: 35px;
+      height: 35px;
+      font-size: 1.2rem;
+    }
+  
+    .card-content-and-maps {
+      flex-direction: column;
+    }
+  
+    .maps-container {
+      margin-top: 2rem;
+      height: 250px;
+    }
+  
+    .card-title {
+      font-size: 2.2rem;
+    }
+  
+    .card-content {
+      padding-right: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-title {
+      font-size: 1.8rem;
+    }
+  
+    .info-item {
+      font-size: 1rem;
+    }
+  
+    .carousel-image {
+      min-width: 200px;
+      height: 150px;
+    }
+  }
+  
+  .carousel-item img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+  }
+  
+  .map-e-carrossel {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: center;
+  }
+  
+  .maps-container {
+    flex: 1;
+    min-width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Redefine o carrossel-container para dividir espaço */
+  .carrossel-container {
+    flex: 1;
+    max-width: 500px;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem auto;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .links-container a {
+    font-size: 20px; /* ajuste conforme desejado */
+  }
