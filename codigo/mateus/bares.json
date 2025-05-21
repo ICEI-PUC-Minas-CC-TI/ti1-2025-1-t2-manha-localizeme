@@ -1,1 +1,51 @@
+[
+  {
+    "id": "bar1",
+    "nome": "Bar do Lopes",
+    "imagem": "assets/bar do lopes.webp",
+    "descricao": "Tradicional bar de Belo Horizonte, conhecido por sua vasta seleção de cervejas e petiscos saborosos."
+  },
+  {
+    "id": "bar2",
+    "nome": "Juscelino Bar",
+    "imagem": "assets/juscelino bar.jpg",
+    "descricao": "Um bar aconchegante, famoso pelos drinques exclusivos e o ambiente agradável."
+  },
+  {
+    "id": "bar3",
+    "nome": "Mercearia 130",
+    "imagem": "assets/Mercearia 130.jpg",
+    "descricao": "Barzinho descolado na Savassi, com ótimos petiscos e um ótimo clima para happy hour."
+  },
+  {
+    "id": "bar4",
+    "nome": "Birosca S2",
+    "imagem": "assets/birosca.png",
+    "descricao": "Bar mais descontraído e sempre com música boa. A carne de sol é imperdível!"
+  },
+  {
+    "id": "bar5",
+    "nome": "Patorroco",
+    "imagem": "assets/paotorroco.JPG",
+    "descricao": "Ambiente boêmio e excelente para quem gosta de uma boa música e comida típica mineira."
+  },
+  {
+    "id": "bar6",
+    "nome": "Montê Bar",
+    "imagem": "assets/montebar.webp",
+    "descricao": "Um clássico de BH, o Bar do Cid é perfeito para quem gosta de uma boa cerveja e um petisco simples e gostoso."
+  },
+  {
+    "id": "bar7",
+    "nome": "Redentor Bar",
+    "imagem": "assets/redentor.webp",
+    "descricao": "Com ambiente rústico e descontraído, a Serralheria é famosa por suas cervejas artesanais e petiscos de qualidade."
+  },
+  {
+    "id": "bar8",
+    "nome": "Tizé Bar e Butequim",
+    "imagem": "assets/tize.webp",
+    "descricao": "Especializada em cervejas artesanais, a Falke oferece uma grande variedade de sabores e um ambiente acolhedor."
+  }
+]
 
