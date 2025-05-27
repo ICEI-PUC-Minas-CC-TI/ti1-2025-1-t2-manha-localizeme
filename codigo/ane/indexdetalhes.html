@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Detalhes</title>
-  <!-- Bootstrap CSS (apenas para o carrossel) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styledetalhes.css">
 </head>
@@ -14,7 +13,6 @@
     <div id="cards-container" class="cards-grid"></div>
   </main>
 
-  <!-- Bootstrap JS Bundle (apenas para o carrossel) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   
   <script src="funcionalidades.js"></script>
@@ -68,6 +66,7 @@
         `;
       }
 
+      //Conteúdo
       card.innerHTML = `
   <div class="card-title-container d-flex align-items-center justify-content-center gap-3">
     <h2 class="card-title m-0">${bar.nome}</h2>
@@ -75,6 +74,7 @@
       <i class="bi bi-star"></i>
     </button>
   </div>
+
 
   <p class="card-text">${bar.descricao}</p>
   <img src="${bar.imagem_principal}" alt="${bar.nome}" class="card-img">
