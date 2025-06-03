@@ -91,10 +91,48 @@
     <div class="maps-container">${bar.Maps}</div>
     ${carrosselHTML}
   </div>
+
+  <div class="container mt-5">
+    <h1 class="mb-4">Avaliação de Restaurantes</h1>
+    
+    <div class="card mb-4">
+      <div class="card-header">
+        <h2 id="restaurante-nome">Outback Steakhouse</h2>
+      </div>
+      <div class="card-body">
+        <!-- Lista de Comentários -->
+        <div id="comentarios-container" class="mb-4">
+          <h3>Comentários</h3>
+          <div id="comentarios-list" class="list-group"></div>
+        </div>
+        
+        <!-- Formulário de Comentário -->
+        <div id="form-container">
+          <h3>Adicionar Comentário</h3>
+          <form id="comentario-form" class="mb-4">
+            <input type="hidden" id="comentario-id">
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="mb-3">
+              <label for="texto" class="form-label">Comentário</label>
+              <textarea class="form-control" id="texto" rows="3" required></textarea>
+            </div>
+            <button type="submit" id="submit-btn" class="btn btn-primary">Enviar</button>
+            <button type="button" id="cancel-btn" class="btn btn-secondary" style="display: none;">Cancelar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
 `;
 
       container.appendChild(card);
     });
+
+    
   </script>
 </body>
 </html>

@@ -279,3 +279,27 @@ body {
   .links-container a {
     font-size: 20px;
   }
+
+  /* Comentários */
+  .list-group-item {
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+  }
+  
+  .btn-group {
+    margin-top: 0.5rem;
+  }
+  
+  #comentarios-container {
+    padding: 1rem;
+
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  }
+  
+  #form-container {
+    padding: 1rem;
+
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  }
