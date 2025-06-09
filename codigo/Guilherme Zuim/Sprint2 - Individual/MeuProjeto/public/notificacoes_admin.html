@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciar Notificações</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+<div class="container py-4">
+    <h2 class="mb-4">Gerenciar Notificações</h2>
+    
+    <!-- Formulário para criar nova notificação -->
+    <div class="card mb-4">
+        <div class="card-header">
+            <h5>Nova Notificação</h5>
+        </div>
+        <div class="card-body">
+            <form id="formNova">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Título</label>
+                        <input type="text" class="form-control" name="titulo" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Tipo</label>
+                        <select class="form-control" name="tipo">
+                            <option value="info">Info (Azul)</option>
+                            <option value="success">Sucesso (Verde)</option>
+                            <option value="warning">Aviso (Amarelo)</option>
+                            <option value="danger">Erro (Vermelho)</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label">Mensagem</label>
+                        <textarea class="form-control" name="mensagem" rows="3" required></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Criar Notificação</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Lista de notificações existentes -->
+    <div class="card">
+        <div class="card-header">
+            <h5>Notificações Existentes</h5>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover" id="tblNotificacoes">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Título</th>
+                        <th>Tipo</th>
+                        <th>Status</th>
+                        <th>Criado em</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal de edição -->
+    <div class="modal fade" id="modalEdit" tabindex="-1">
+        <div class="modal-dialog">
+            <form class="modal-content" id="formEdit">
+                <div class="modal-header">
+                    <h5 class="modal-title">Editar Notificação</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="id">
+                    <div class="mb-3">
+                        <label class="form-label">Título</label>
+                        <input type="text" class="form-control" name="titulo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Tipo</label>
+                        <select class="form-control" name="tipo">
+                            <option value="info">Info (Azul)</option>
+                            <option value="success">Sucesso (Verde)</option>
+                            <option value="warning">Aviso (Amarelo)</option>
+                            <option value="danger">Erro (Vermelho)</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Mensagem</label>
+                        <textarea class="form-control" name="mensagem" rows="3" required></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" name="ativa" id="editAtiva" value="true">
+                        <label class="form-check-label" for="editAtiva">Notificação ativa</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="resultado" class="mt-3"></div>
+</div>
+
+<script src="notificacoes_admin.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
