@@ -10,7 +10,7 @@ const PORT = 3000;
 // Middlewares
 app.use(cors());
 app.use(express.json());
-app.use(express.urlencoded({ extended: true })); // ADICIONADO: Para processar dados de formulário
+app.use(express.urlencoded({ extended: true })); // Para processar dados de formulário
 app.use(express.static('public'));
 
 // Configuração do multer para upload de imagens
@@ -29,6 +29,11 @@ const upload = multer({ storage: storage });
 const destinosPath = path.join(__dirname, 'data', 'destinos.json');
 const categoriasPath = path.join(__dirname, 'data', 'categorias.json');
 const notificationsPath = path.join(__dirname, 'data', 'notifications.json');
+
+// Função para gerar ID único para notificações
+function gerarIdUnico() {
+    return Date.now() + '-' + Math.round(Math.random() * 1E9);
+}
 
 // Função para criar diretórios e arquivos se não existirem
 function inicializarArquivos() {
@@ -59,6 +64,24 @@ app.get('/api/estabelecimentos', (req, res) => {
   fs.readFile(destinosPath, 'utf8', (err, data) => {
     if (err) return res.status(500).json({ error: 'Erro ao ler destinos' });
     res.json(JSON.parse(data));
+  });
+});
+
+// BUSCAR estabelecimento por ID
+app.get('/api/estabelecimentos/:id', (req, res) => {
+  const id = Number(req.params.id);
+  
+  fs.readFile(destinosPath, 'utf8', (err, data) => {
+    if (err) return res.status(500).json({ error: 'Erro ao ler destinos' });
+    
+    const json = JSON.parse(data);
+    const destino = json.destinos.find(d => d.id === id);
+    
+    if (!destino) {
+      return res.status(404).json({ error: 'Destino não encontrado' });
+    }
+    
+    res.json(destino);
   });
 });
 
@@ -160,6 +183,9 @@ app.post('/api/registro', upload.fields([
 
     destinos.push(novoEstabelecimento);
 
+    // Criar notificação automática para novo estabelecimento
+    criarNotificacaoNovoEstabelecimento(novoEstabelecimento);
+
     // Salva o novo arquivo
     fs.writeFile(destinosPath, JSON.stringify({ destinos }, null, 2), err => {
       if (err) return res.status(500).json({ error: 'Erro ao salvar destino' });
@@ -167,6 +193,25 @@ app.post('/api/registro', upload.fields([
     });
   });
 });
+
+// Função para criar notificação automática quando um novo estabelecimento é registrado
+function criarNotificacaoNovoEstabelecimento(estabelecimento) {
+    const data = lerNotificacoes();
+    const novaNotificacao = {
+        id: gerarIdUnico(), // ID único baseado em timestamp + random
+        titulo: 'Novo Estabelecimento Cadastrado!',
+        mensagem: `${estabelecimento.nome} foi adicionado à plataforma. Confira agora!`,
+        tipo: 'success',
+        ativa: true,
+        created_at: new Date().toISOString(),
+        estabelecimento_id: estabelecimento.id // Referência ao estabelecimento
+    };
+    
+    data.notifications.push(novaNotificacao);
+    salvarNotificacoes(data);
+    
+    console.log('Notificação automática criada:', novaNotificacao);
+}
 
 // Função para ler notificações
 function lerNotificacoes() {
@@ -196,9 +241,8 @@ app.get('/api/notifications', (req, res) => {
 
 // CRIAR nova notificação
 app.post('/api/notifications', (req, res) => {
-    console.log('Dados recebidos:', req.body); // DEBUG
+    console.log('Dados recebidos:', req.body);
     
-    // Verificar se os dados necessários estão presentes
     if (!req.body.titulo || !req.body.mensagem) {
         return res.status(400).json({ 
             error: 'Título e mensagem são obrigatórios',
@@ -208,7 +252,7 @@ app.post('/api/notifications', (req, res) => {
     
     const data = lerNotificacoes();
     const novaNotificacao = {
-        id: data.notifications.length ? data.notifications[data.notifications.length - 1].id + 1 : 1,
+        id: gerarIdUnico(), // ID único baseado em timestamp + random
         titulo: req.body.titulo,
         mensagem: req.body.mensagem,
         tipo: req.body.tipo || 'info',
@@ -219,15 +263,15 @@ app.post('/api/notifications', (req, res) => {
     data.notifications.push(novaNotificacao);
     salvarNotificacoes(data);
     
-    console.log('Notificação criada:', novaNotificacao); // DEBUG
+    console.log('Notificação criada:', novaNotificacao);
     res.json({ sucesso: true, notification: novaNotificacao });
 });
 
 // EDITAR notificação
 app.put('/api/notifications/:id', (req, res) => {
-    console.log('Editando notificação:', req.params.id, req.body); // DEBUG
+    console.log('Editando notificação:', req.params.id, req.body);
     
-    const id = Number(req.params.id);
+    const id = req.params.id; // Agora é string, não número
     const data = lerNotificacoes();
     const notificacao = data.notifications.find(n => n.id === id);
     
@@ -235,7 +279,6 @@ app.put('/api/notifications/:id', (req, res) => {
         return res.status(404).json({ error: 'Notificação não encontrada' });
     }
     
-    // Verificar se os dados necessários estão presentes
     if (!req.body.titulo || !req.body.mensagem) {
         return res.status(400).json({ 
             error: 'Título e mensagem são obrigatórios',
@@ -254,7 +297,7 @@ app.put('/api/notifications/:id', (req, res) => {
 
 // EXCLUIR notificação
 app.delete('/api/notifications/:id', (req, res) => {
-    const id = Number(req.params.id);
+    const id = req.params.id; // Agora é string, não número
     const data = lerNotificacoes();
     const index = data.notifications.findIndex(n => n.id === id);
     
@@ -265,24 +308,6 @@ app.delete('/api/notifications/:id', (req, res) => {
     data.notifications.splice(index, 1);
     salvarNotificacoes(data);
     res.json({ sucesso: true });
-});
-
-// BUSCAR estabelecimento por ID
-app.get('/api/estabelecimentos/:id', (req, res) => {
-  const id = Number(req.params.id);
-  
-  fs.readFile(destinosPath, 'utf8', (err, data) => {
-    if (err) return res.status(500).json({ error: 'Erro ao ler destinos' });
-    
-    const json = JSON.parse(data);
-    const destino = json.destinos.find(d => d.id === id);
-    
-    if (!destino) {
-      return res.status(404).json({ error: 'Destino não encontrado' });
-    }
-    
-    res.json(destino);
-  });
 });
 
 // Inicia o servidor

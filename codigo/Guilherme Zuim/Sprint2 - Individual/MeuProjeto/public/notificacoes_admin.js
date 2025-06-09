@@ -40,7 +40,6 @@ $(function() {
     $('#formNova').on('submit', function(e) {
         e.preventDefault();
         
-        // Usar AJAX com configuração explícita
         $.ajax({
             url: '/api/notifications',
             type: 'POST',
