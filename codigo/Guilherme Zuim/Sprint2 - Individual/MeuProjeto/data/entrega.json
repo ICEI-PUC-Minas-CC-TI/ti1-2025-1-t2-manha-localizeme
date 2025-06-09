@@ -1,0 +1,96 @@
+{
+  "destinos": [
+    {
+      "id": 1,
+      "nome": "Funtasy",
+      "descricao": "Bar de Jogos",
+      "conteudo": "AAAAAAAAAAAAAAAAAA",
+      "destaque": true,
+      "imagem_principal": "imgs/1747942521875-639733627-c1c733ed372bfff73841e219e4ad7e0f.jpg",
+      "Avaliacoes": "https://www.youtube.com",
+      "cardapio": "https://www.youtube.com",
+      "instagram": "https://www.youtube.com",
+      "endereco": "rua do saci 26",
+      "Maps": "https://www.youtube.com",
+      "categorias": [
+        2,
+        3
+      ],
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "imgs/1747942521876-866152890-c1c733ed372bfff73841e219e4ad7e0f.jpg",
+          "descricao": "dawda"
+        },
+        {
+          "id": 2,
+          "src": "imgs/1747942521878-379245296-44b052a88509ec055205d6f606caf6e6.jpg",
+          "descricao": "dawda"
+        },
+        {
+          "id": 3,
+          "src": "imgs/1747942521880-776812372-b5d43236-cf62-4066-8945-640c1394dfc0.png",
+          "descricao": "dawda"
+        }
+      ]
+    }
+  ],
+
+   "categorias": [
+      { "id": 1, "nome": "Buteco" },
+      { "id": 2, "nome": "Temático" },
+      { "id": 3, "nome": "Jogos" }
+    ],
+
+   "usuario": [
+    { 
+        "id": 1, 
+        "nome": "Joao",
+        "email": "joao@gmail.com",
+        "categorias": [
+          1,
+          2
+        ],
+        "Avaliacoes": [
+          {
+            "id": 1,
+            "destino_id": 1,
+            "nota": 5,
+            "comentario": "Ótimo lugar!"
+          },
+          {
+            "id": 2,
+            "destino_id": 2,
+            "nota": 4,
+            "comentario": "Bom atendimento."
+          }
+        ],
+        "favoritos": [
+          {
+            "id": 1,
+            "destino_id": 1
+          },
+          {
+            "id": 2,
+            "destino_id": 2
+          }
+        ],
+        "diario": [
+          {
+            "id": 1,
+            "destino_id": 1,
+            "data_visita": "2023-10-01",
+            "comentario": "Adorei o ambiente!",
+            "imagem" : "imgs/1747942521875-639733627-c1c733ed372bfff73841e219e4ad7e0f.jpg"
+          },
+          {
+            "id": 2,
+            "destino_id": 2,
+            "data_visita": "2023-10-02",
+            "comentario": "Comida deliciosa!",
+            "imagem" : "imgs/1747942521876-866152890-c1c733ed372bfff73841e219e4ad7e0f.jpg"
+          }
+        ]
+    }
+]
+}
