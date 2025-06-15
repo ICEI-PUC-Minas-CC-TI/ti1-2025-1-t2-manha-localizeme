@@ -69,6 +69,7 @@
         "imagem": "img/bar10.jpg",
         "categoria": "cerveja"
     },
+
     {
         "nome": "Devotos Sports Bar",
         "bairro": "R. São Paulo, 1966 - Lourdes",
@@ -84,17 +85,17 @@
         "categoria": "esportes"
     },
     {
-        "nome": "Albanos",
-        "bairro": "R. São Paulo, 1966 - Lourdes",
-        "nota": 4.2,
-        "imagem": "img/bar8.jpg",
-        "categoria": "esportes"
-    },
-    {
         "nome": "Fanáticos Esporte Bar",
         "bairro": "Av. Guarapari, 99 - Santa Amelia",
         "nota": 4.4,
         "imagem": "img/bar7.jpg",
+        "categoria": "esportes"
+    },
+    {
+        "nome": "Arena Sports Bar",
+        "bairro": "Av. Antônio Carlos, 6627 - Pampulha",
+        "nota": 4.6,
+        "imagem": "img/bar20.jpg",
         "categoria": "esportes"
     }
 ]
