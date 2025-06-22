@@ -400,20 +400,6 @@ Guarde os seus estabelecimentos favoritos em uma aba específica.
     "state": "MG",
     "country": "Brazil",
     "zipcode": "30310124"
-  },
-  "imageUrl": "https://link-da-imagem-ou-upload", 
-  "isFavorited": false,
-  "actions": {
-    "viewDetails": {
-      "label": "Ver Detalhes",
-      "url": "/estabelecimentos/jangal_001"
-    },
-    "toggleFavorite": {
-      "label": "Favoritar",
-      "icon": "heart"
-    }
-  }
-}
 * **Instruções de acesso:**
 * Veja os bares favoritados e possibilidade de remover dos favoritos.
 
