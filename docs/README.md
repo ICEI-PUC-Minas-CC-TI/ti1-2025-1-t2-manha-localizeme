@@ -468,40 +468,25 @@ Na tela de detalhes da cada estabelecimento, ao final dela, possui uma área de 
 * **Tela da funcionalidade**:
 <img src="images/comentario.png" alt="">
 
-## Estruturas de Dados
+##### Funcionalidade 7 - Notificações
 
-Exemplo de um perfil criado com todos os dados informados, incluindo as categorias de interesse da pessoa.
+Comente algo sobre o estabelecimento.
 
-##### Estrutura de Dados - Perfis
+* **Estrutura de dados:** 
 
-Contatos da aplicação
+      "id": "1750364255872-431126336",
+      "titulo": "wdadwad",
+      "mensagem": "wadawd",
+      "tipo": "info",
+      "ativa": true,
+      "created_at": "2025-06-19T20:17:35.872Z"
 
-```json
-  {
-    "id": 1,
-    "nome": "Leanne Graham",
-    "email": "Sincere@april.biz",
-    "idade": "25",
-    "telefone": "1-770-736-8031",
-    "cidade": "Belo Horizonte",
-    "categorias": "tematico",
-  }
-```
+* **Instruções de acesso:**
 
-##### Estrutura de Dados - Usuários
-
-Registro dos usuários do sistema utilizados para login e para o perfil do sistema
-
-```json
-  {
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    email: "joana@abc.com",
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    login: "user",
-    nome: "Usuário do Sistema",
-    senha: "123"
-  }
-```
+Na tela de admin, é possível criar, alterar e deletar notificações
+  
+* **Tela da funcionalidade**:
+<img src="images/notificacoes.png" alt="">
 
 > **Orientações:**
 >
