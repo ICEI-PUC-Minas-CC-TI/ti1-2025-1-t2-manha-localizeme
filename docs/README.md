@@ -353,6 +353,10 @@ Esta seção apresenta todos os detalhes da solução criada no projeto.
 
 ## Vídeo do Projeto
 
+## Video de funcionalidades 
+https://drive.google.com/file/d/13KUlLa-10ldSqTp97m2twtp5r8zqnxth/view?usp=sharing
+
+## Video Promocional
 [![Vídeo do projeto](videos/apresentacao.mp4)](https://youtube.com/shorts/eeJcNIVdKcI?feature=share)
 
 ## Funcionalidades
@@ -385,20 +389,39 @@ Busque por um estabelecimento específico.
 
 Guarde os seus estabelecimentos favoritos em uma aba específica.
 
-* **Estrutura de dados:** 
-
+* **Estrutura de dados:**
+* {
+  "placeId": "jangal_001",
+  "name": "Jângal",
+  "description": "Além dos bons petiscos, drinks e música, o Jângal foi projetado para fazer você relaxar e se divertir, juntando um espaço legal com toques de arte e cultura.",
+  "address": {
+    "street": "Rua Outono 523",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "country": "Brazil",
+    "zipcode": "30310124"
 * **Instruções de acesso:**
+* Veja os bares favoritados e possibilidade de remover dos favoritos.
 
 * **Tela da funcionalidade**:
 <img src="images/favoritar.png" alt="">
 
 ##### Funcionalidade 4 - Notificações
 
-Receba notificações de eventos dos estabelecimentos.
+Comente algo sobre o estabelecimento.
 
 * **Estrutura de dados:** 
 
+      "id": "1750364255872-431126336",
+      "titulo": "wdadwad",
+      "mensagem": "wadawd",
+      "tipo": "info",
+      "ativa": true,
+      "created_at": "2025-06-19T20:17:35.872Z"
+
 * **Instruções de acesso:**
+
+Na tela de admin, é possível criar, alterar e deletar notificações
   
 * **Tela da funcionalidade**:
 <img src="images/notificacoes.png" alt="">
@@ -467,41 +490,6 @@ Na tela de detalhes da cada estabelecimento, ao final dela, possui uma área de 
   
 * **Tela da funcionalidade**:
 <img src="images/comentario.png" alt="">
-
-## Estruturas de Dados
-
-Exemplo de um perfil criado com todos os dados informados, incluindo as categorias de interesse da pessoa.
-
-##### Estrutura de Dados - Perfis
-
-Contatos da aplicação
-
-```json
-  {
-    "id": 1,
-    "nome": "Leanne Graham",
-    "email": "Sincere@april.biz",
-    "idade": "25",
-    "telefone": "1-770-736-8031",
-    "cidade": "Belo Horizonte",
-    "categorias": "tematico",
-  }
-```
-
-##### Estrutura de Dados - Usuários
-
-Registro dos usuários do sistema utilizados para login e para o perfil do sistema
-
-```json
-  {
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    email: "joana@abc.com",
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    login: "user",
-    nome: "Usuário do Sistema",
-    senha: "123"
-  }
-```
 
 > **Orientações:**
 >
