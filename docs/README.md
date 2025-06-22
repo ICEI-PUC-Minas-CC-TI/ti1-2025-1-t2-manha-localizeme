@@ -7,7 +7,6 @@ Informações básicas do projeto.
 * **Membros da equipe:**
 
   * Ane Madjarian Viana (https://github.com/anemadjarian)
-  * Fernanda Mariana de Oliveira Santos (https://github.com/FeyreJeon)
   * Gabriel Costa Lima (https://github.com/gcl32)
   * Guilherme Almeida Zuim (https://github.com/zoiacode)
   * Mateus Henrique Saturnino Gonçalves (https://github.com/mateusatus)
