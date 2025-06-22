@@ -295,8 +295,6 @@ Artefatos relacionados com a interface e a interacão do usuário na proposta de
 
 Estes são os protótipos de telas do sistema.
 
-**✳️✳️✳️ Home Page ✳️✳️✳️**
-
 Home Page
 
 Homepage com botões de categorias, populares, Novidades, Busca, Perfil, salvar, opção de local e Carrossel
@@ -309,8 +307,6 @@ Homepage com botões de categorias, populares, Novidades, Busca, Perfil, salvar,
 ![Fluxo de telas](images/fluxograma.png)
 
 ### Protótipo Interativo
-
-**✳️✳️✳️ COLOQUE AQUI UM IFRAME COM SEU PROTÓTIPO INTERATIVO ✳️✳️✳️**
 
 https://marvelapp.com/adc9haa
 
