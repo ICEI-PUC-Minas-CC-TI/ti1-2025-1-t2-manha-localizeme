@@ -64,10 +64,10 @@ Vamos mergulhar no universo dos usuários para descobrir:
 Na **Etapa de Entendimento**, utilizaremos a metodologia **Design Thinking** para compreender profundamente o problema. Durante esse processo, vamos criar e refinar as ferramentas abaixo:
 
 ### 1. Matriz CSD
-
+<img src="images/matriz.png" alt="">
 
 ### 2. Mapa de Stakeholders
-[![stak.png](../../../../Desktop/stak.png)](https://miro.com/app/board/uXjVIVEqQjM=/)
+<img src="images/stake.png" alt="">
 
 #### Detalhes Importantes:
 - **Entrevistados**:  (4 pessoas, 3 donos de bares)
@@ -202,7 +202,9 @@ Na **Etapa de Entendimento**, utilizaremos a metodologia **Design Thinking** par
 
 ### Personas
 
-[![persona.png](../../../../Desktop/persona.png)](https://miro.com/app/board/uXjVIVEqQjM=/)]
+<img src="images/persona1.png" alt="">
+<img src="images/persona2.png" alt="">
+<img src="images/persona3.png" alt="">
 
 #### 📍 **Perfil Cris**
 
