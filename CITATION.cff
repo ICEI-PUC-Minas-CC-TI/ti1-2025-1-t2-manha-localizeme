@@ -1,6 +1,6 @@
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: 
+title: LocalizeMe
 authors:
   - family-names: Madjarian Viana
     given-names: Ane
@@ -25,8 +25,9 @@ authors:
     family-names: Dias Maciel
     given-names: Wesley
 keywords:
-  - 
-  - 
+  - Restaurantes
+  - Bares
+  - Ponto turístico
 repository-code: 
 license: CC-BY-4.0
 version: 1.0.0
