@@ -394,11 +394,20 @@ Guarde os seus estabelecimentos favoritos em uma aba específica.
 
 ##### Funcionalidade 4 - Notificações
 
-Receba notificações de eventos dos estabelecimentos.
+Comente algo sobre o estabelecimento.
 
 * **Estrutura de dados:** 
 
+      "id": "1750364255872-431126336",
+      "titulo": "wdadwad",
+      "mensagem": "wadawd",
+      "tipo": "info",
+      "ativa": true,
+      "created_at": "2025-06-19T20:17:35.872Z"
+
 * **Instruções de acesso:**
+
+Na tela de admin, é possível criar, alterar e deletar notificações
   
 * **Tela da funcionalidade**:
 <img src="images/notificacoes.png" alt="">
@@ -467,26 +476,6 @@ Na tela de detalhes da cada estabelecimento, ao final dela, possui uma área de 
   
 * **Tela da funcionalidade**:
 <img src="images/comentario.png" alt="">
-
-##### Funcionalidade 7 - Notificações
-
-Comente algo sobre o estabelecimento.
-
-* **Estrutura de dados:** 
-
-      "id": "1750364255872-431126336",
-      "titulo": "wdadwad",
-      "mensagem": "wadawd",
-      "tipo": "info",
-      "ativa": true,
-      "created_at": "2025-06-19T20:17:35.872Z"
-
-* **Instruções de acesso:**
-
-Na tela de admin, é possível criar, alterar e deletar notificações
-  
-* **Tela da funcionalidade**:
-<img src="images/notificacoes.png" alt="">
 
 > **Orientações:**
 >
