@@ -357,47 +357,73 @@ Esta seção apresenta todos os detalhes da solução criada no projeto.
 
 ## Funcionalidades
 
-Registro/Login, recomendação de preferências, busca com filtro, informações relevantes sobre o estabelecimento
+Registro, explorar, favoritar, notificações, informações, comentários.
 
 ##### Funcionalidade 1 - Registro
 
-Haverá uma tela de registro para cada usuário.
+Tela de registro de estabelecimentos novos.
 
-* **Estrutura de dados:** [Login](#ti_ed_registro)
+* **Estrutura de dados:** 
+
 * **Instruções de acesso:**
-  * Abra o site e efetue o login
+  * 
 * **Tela da funcionalidade**:
-![Tela de Funcionalidade](images/LoginPrint.png)
+<img src="images/cadastro.png" alt="">
 
-##### Funcionalidade 2 - Recomendação de preferências
+##### Funcionalidade 2 - Explorar
 
-Haverão recomendações personalizadas de acordo com as preferências de cada usuário
+Busque por um estabelecimento específico.
 
-* **Estrutura de dados:** [Recomendações](#ti_ed_recomendacoes)
+* **Estrutura de dados:** 
+
 * **Instruções de acesso:**
-  * Registre suas preferências e receba recomendações personalizadas
+  
 * **Tela da funcionalidade**:
-![Tela de Funcionalidade](images/RecomendacoesPrint.png)
+<img src="images/explorar.png" alt="">
 
-##### Funcionalidade 1 - Busca
+##### Funcionalidade 3 - Favoritar
 
-Haverá uma divisão por categorias e busca por nome ou tema do local
+Guarde os seus estabelecimentos favoritos em uma aba específica.
 
-* **Estrutura de dados:** [Busca](#ti_ed_busca)
+* **Estrutura de dados:** 
+
 * **Instruções de acesso:**
-  * Abra o site e busque um local
+
 * **Tela da funcionalidade**:
-![Tela de Funcionalidade](images/BuscaPrint.png)
+<img src="images/favoritar.png" alt="">
 
-##### Funcionalidade 1 - Informações
+##### Funcionalidade 4 - Notificações
 
-Haverá uma tela com informações relevantes para cada estabelecimento
+Receba notificações de eventos dos estabelecimentos.
 
-* **Estrutura de dados:** [Login](#ti_ed_informacoes)
+* **Estrutura de dados:** 
+
 * **Instruções de acesso:**
-  * Abra o site, abra um local desejado e tenha acesso a todas as informacoes relevantes a respeito.
+  
 * **Tela da funcionalidade**:
-![Tela de Funcionalidade](images/InformacoesPrint.png)
+<img src="images/notificacoes.png" alt="">
+
+##### Funcionalidade 5 - Informações
+
+Informações sobre o estabelecimento.
+
+* **Estrutura de dados:** 
+
+* **Instruções de acesso:**
+  
+* **Tela da funcionalidade**:
+<img src="images/infos.png" alt="">
+
+##### Funcionalidade 6 - Comentários
+
+Comente algo sobre o estabelecimento.
+
+* **Estrutura de dados:** 
+
+* **Instruções de acesso:**
+  
+* **Tela da funcionalidade**:
+<img src="images/comentario.png" alt="">
 
 ## Estruturas de Dados
 
