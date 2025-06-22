@@ -455,11 +455,11 @@ Comente algo sobre o estabelecimento.
 * **Estrutura de dados:** 
 
     "id": "1750621851046",
-    "postId": "2",
-    "nome": "b",
-    "texto": "bb",
-    "data": "2025-06-22T19:50:51.046Z",
-    "editado": false
+    "postId": "",
+    "nome": "",
+    "texto": "",
+    "data": "",
+    "editado": 
 
 * **Instruções de acesso:**
 
