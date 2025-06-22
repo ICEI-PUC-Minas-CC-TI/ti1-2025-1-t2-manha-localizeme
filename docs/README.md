@@ -389,9 +389,33 @@ Busque por um estabelecimento específico.
 
 Guarde os seus estabelecimentos favoritos em uma aba específica.
 
-* **Estrutura de dados:** 
-
+* **Estrutura de dados:**
+* {
+  "placeId": "jangal_001",
+  "name": "Jângal",
+  "description": "Além dos bons petiscos, drinks e música, o Jângal foi projetado para fazer você relaxar e se divertir, juntando um espaço legal com toques de arte e cultura.",
+  "address": {
+    "street": "Rua Outono 523",
+    "city": "Belo Horizonte",
+    "state": "MG",
+    "country": "Brazil",
+    "zipcode": "30310124"
+  },
+  "imageUrl": "https://link-da-imagem-ou-upload", 
+  "isFavorited": false,
+  "actions": {
+    "viewDetails": {
+      "label": "Ver Detalhes",
+      "url": "/estabelecimentos/jangal_001"
+    },
+    "toggleFavorite": {
+      "label": "Favoritar",
+      "icon": "heart"
+    }
+  }
+}
 * **Instruções de acesso:**
+* Veja os bares favoritados e possibilidade de remover dos favoritos.
 
 * **Tela da funcionalidade**:
 <img src="images/favoritar.png" alt="">
