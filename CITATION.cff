@@ -2,18 +2,16 @@ cff-version: 1.0.1
 message: Please cite this software using these metadata.
 title: 
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
+  - family-names: Madjarian Viana
+    given-names: Ane
+  - family-names: Costa Lima
+    given-names: Gabriel
+  - family-names: Almeida Zuim
+    given-names: Guilherme
+  - family-names: Saturnino Gonçalves
+    given-names: Mateus Henrique
+  - family-names: Barros de Carvalho
+    given-names: Nathan
   - name-suffix: Professor
     affiliation: PUC Minas
     family-names: 
