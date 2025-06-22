@@ -409,7 +409,41 @@ Informações sobre o estabelecimento.
 
 * **Estrutura de dados:** 
 
+      "id": 1,
+      "nome": "",
+      "descricao": "",
+      "conteudo": "",
+      "destaque": ,
+      "imagem_principal": "",
+      "Avaliacoes": "",
+      "cardapio": "",
+      "instagram": "",
+      "endereco": "",
+      "Maps": "",
+      "categorias": [
+        
+      ],
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "",
+          "descricao": ""
+        },
+        {
+          "id": 2,
+          "src": "",
+          "descricao": ""
+        },
+        {
+          "id": 3,
+          "src": "",
+          "descricao": ""
+        }
+      ]
+
 * **Instruções de acesso:**
+
+Na página home, aperte em "Ver detlahes" de algum card, ou pesquise no explorar.
   
 * **Tela da funcionalidade**:
 <img src="images/infos.png" alt="">
@@ -420,7 +454,16 @@ Comente algo sobre o estabelecimento.
 
 * **Estrutura de dados:** 
 
+    "id": "1750621851046",
+    "postId": "2",
+    "nome": "b",
+    "texto": "bb",
+    "data": "2025-06-22T19:50:51.046Z",
+    "editado": false
+
 * **Instruções de acesso:**
+
+Na tela de detalhes da cada estabelecimento, ao final dela, possui uma área de fazer os comentários, editar e excluir.
   
 * **Tela da funcionalidade**:
 <img src="images/comentario.png" alt="">
