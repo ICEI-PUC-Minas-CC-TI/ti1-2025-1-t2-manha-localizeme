@@ -1,7 +1,0 @@
-{
-    "categorias": [
-      { "id": 1, "nome": "Buteco" },
-      { "id": 2, "nome": "Temático" },
-      { "id": 3, "nome": "Jogos" }
-    ]
-  }

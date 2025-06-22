@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalizeMe - Turismo Dark</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        /* Tema Dark Global */
+        :root {
+            --dark-bg: #0a0a0a;
+            --dark-secondary: #1a1a1a;
+            --dark-tertiary: #2a2a2a;
+            --dark-quaternary: #3a3a3a;
+            --dark-text: #e0e0e0;
+            --dark-text-secondary: #b0b0b0;
+            --dark-border: #333;
+            --dark-primary: #6c5ce7;
+            --dark-primary-hover: #5b4bd6;
+            --dark-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --dark-card-bg: #1e1e1e;
+            --dark-card-hover: #252525;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--dark-text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Navegação */
+        .navbar-dark {
+            background-color: var(--dark-secondary) !important;
+            border-bottom: 1px solid var(--dark-border);
+            backdrop-filter: blur(10px);
+        }
+
+        .navbar-brand {
+            color: var(--dark-primary) !important;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .navbar-nav .nav-link {
+            color: var(--dark-text) !important;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--dark-primary) !important;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: var(--dark-primary) !important;
+        }
+
+        .navbar-nav .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 3px;
+            background: var(--dark-primary);
+            border-radius: 2px;
+        }
+
+        /* Dropdown */
+        .dropdown-menu {
+            background-color: var(--dark-tertiary) !important;
+            border: 1px solid var(--dark-border);
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .dropdown-item {
+            color: var(--dark-text) !important;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-item:hover {
+            background-color: var(--dark-quaternary) !important;
+            color: var(--dark-primary) !important;
+        }
+
+        .dropdown-header {
+            color: var(--dark-text-secondary) !important;
+            border-bottom: 1px solid var(--dark-border);
+            padding-bottom: 8px;
+            margin-bottom: 8px;
+        }
+
+        .dropdown-divider {
+            border-color: var(--dark-border);
+        }
+
+        /* Notificações */
+        .notification-dropdown {
+            max-width: 350px;
+            max-height: 400px;
+            overflow-y: auto;
+            background-color: var(--dark-tertiary) !important;
+        }
+
+        .notification-item {
+            border-bottom: 1px solid var(--dark-border);
+            padding: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: var(--dark-text);
+        }
+
+        .notification-item:hover {
+            background-color: var(--dark-quaternary);
+        }
+
+        .notification-item:last-child {
+            border-bottom: none;
+        }
+
+        .notification-badge {
+            position: relative;
+        }
+
+        .notification-count {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: #e74c3c;
+            color: white;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            font-size: 11px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .notification-type-info {
+            border-left: 4px solid #3498db;
+        }
+
+        .notification-type-success {
+            border-left: 4px solid #2ecc71;
+        }
+
+        .notification-type-warning {
+            border-left: 4px solid #f39c12;
+        }
+
+        .notification-type-danger {
+            border-left: 4px solid #e74c3c;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .hero-section .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-section h1 {
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-section .lead {
+            font-size: 1.3rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Botões */
+        .btn-light {
+            background-color: rgba(255, 255, 255, 0.9);
+            border: none;
+            color: #333;
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-light:hover {
+            background-color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-primary {
+            background-color: var(--dark-primary);
+            border: none;
+            color: white;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--dark-primary-hover);
+            transform: translateY(-1px);
+        }
+
+        /* Seções */
+        .bg-light {
+            background-color: var(--dark-secondary) !important;
+        }
+
+        .py-5 {
+            padding: 4rem 0 !important;
+        }
+
+        /* Barra de Pesquisa */
+        .input-group {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--dark-border);
+        }
+
+        .form-control {
+            background-color: var(--dark-tertiary);
+            border: none;
+            color: var(--dark-text);
+            padding: 15px 20px;
+            font-size: 1rem;
+        }
+
+        .form-control:focus {
+            background-color: var(--dark-tertiary);
+            border-color: var(--dark-primary);
+            box-shadow: 0 0 0 0.2rem rgba(108, 92, 231, 0.25);
+            color: var(--dark-text);
+        }
+
+        .form-control::placeholder {
+            color: var(--dark-text-secondary);
+        }
+
+        /* Cards */
+        .card {
+            background-color: var(--dark-card-bg);
+            border: 1px solid var(--dark-border);
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            transition: all 0.4s ease;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            background-color: var(--dark-card-hover);
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .card-title {
+            color: var(--dark-text);
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .card-text {
+            color: var(--dark-text-secondary);
+            line-height: 1.6;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .card:hover .card-img-top {
+            transform: scale(1.05);
+        }
+
+        /* Carousel */
+        .carousel-item img {
+            height: 400px;
+            object-fit: cover;
+            filter: brightness(0.8);
+        }
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            backdrop-filter: blur(5px);
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .carousel-control-prev {
+            left: 20px;
+        }
+
+        .carousel-control-next {
+            right: 20px;
+        }
+
+        /* Seção Sobre */
+        #sobre {
+            background-color: var(--dark-secondary);
+        }
+
+        #sobre h2 {
+            color: var(--dark-text);
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        #sobre .lead {
+            color: var(--dark-text);
+            font-size: 1.2rem;
+        }
+
+        #sobre p {
+            color: var(--dark-text-secondary);
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        /* Seção Contato */
+        #contato {
+            background-color: var(--dark-bg);
+        }
+
+        #contato h2 {
+            color: var(--dark-text);
+            font-weight: 700;
+            margin-bottom: 3rem;
+        }
+
+        #contato h5 {
+            color: var(--dark-text);
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        #contato p {
+            color: var(--dark-text-secondary);
+            font-size: 1rem;
+        }
+
+        #contato .bi {
+            color: var(--dark-primary);
+            transition: transform 0.3s ease;
+        }
+
+        #contato .text-center:hover .bi {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-secondary) !important;
+            border-top: 1px solid var(--dark-border);
+        }
+
+        footer a {
+            color: var(--dark-text) !important;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: var(--dark-primary) !important;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 80px 0;
+            }
+
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+
+            .card-img-top {
+                height: 150px;
+            }
+
+            .carousel-item img {
+                height: 250px;
+            }
+
+            .navbar-nav {
+                background-color: var(--dark-tertiary);
+                border-radius: 8px;
+                margin-top: 1rem;
+                padding: 1rem;
+            }
+        }
+
+        /* Animações */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Scrollbar personalizada */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--dark-secondary);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--dark-primary);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--dark-primary-hover);
+        }
+
+        /* Melhorias adicionais */
+        .text-muted {
+            color: var(--dark-text-secondary) !important;
+        }
+
+        .text-primary {
+            color: var(--dark-primary) !important;
+        }
+
+        .border-bottom {
+            border-color: var(--dark-border) !important;
+        }
+
+        hr {
+            border-color: var(--dark-border);
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-compass"></i> LocalizeMe
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinos">Destinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+
+                <!-- Dropdown de Categorias e Notificações -->
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="categoriasDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="categoriasDropdown">
+                            <li><a class="dropdown-item" href="musica.html"><i class="bi bi-music-note me-2"></i>Música</a></li>
+                            <li><a class="dropdown-item" href="jogos.html"><i class="bi bi-controller me-2"></i>Jogos</a></li>
+                            <li><a class="dropdown-item" href="cerveja.html"><i class="bi bi-cup-straw me-2"></i>Cerveja</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle notification-badge" href="#" id="notificationDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-bell"></i>
+                            <span class="notification-count" id="notificationCount" style="display: none;">0</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end notification-dropdown" id="notificationList">
+                            <li class="dropdown-header">Notificações</li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="text-center p-3 text-muted" id="noNotifications">
+                                Nenhuma notificação
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Link para Admin -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="notificacoes_admin.html">
+                            <i class="bi bi-gear"></i> Admin
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 mb-4">Descubra Destinos Incríveis</h1>
+            <p class="lead mb-4">Explore os melhores lugares para visitar, comer e se divertir</p>
+            <a href="#destinos" class="btn btn-light btn-lg">
+                <i class="bi bi-search"></i> Explorar Destinos
+            </a>
+        </div>
+    </section>
+
+    <!-- Search Bar Section -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="input-group">
+                        <input type="text" id="searchInput" class="form-control"
+                            placeholder="Buscar por nome, bairro ou categoria...">
+                        <button class="btn btn-primary" type="button" id="searchBtn">
+                            <i class="bi bi-search"></i> Buscar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel -->
+    <section class="mt-4">
+        <div id="carouselDestinos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators" id="carousel-indicators"></div>
+            <div class="carousel-inner" id="carousel-inner"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestinos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDestinos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Destinos -->
+    <section id="destinos" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center" id="destinos-container" style="gap: 0;">
+                <!-- Os destinos serão carregados dinamicamente aqui -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="mb-4">Sobre Nós</h2>
+                    <p class="lead">
+                        Somos apaixonados por turismo e queremos ajudar você a descobrir
+                        os melhores destinos, restaurantes e experiências únicas.
+                    </p>
+                    <p>
+                        Nossa plataforma conecta viajantes com estabelecimentos locais,
+                        proporcionando experiências autênticas e memoráveis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-center mb-4">Entre em Contato</h2>
+                    <div class="row">
+                        <div class="col-md-4 text-center mb-3">
+                            <i class="bi bi-envelope-fill fs-2 text-primary"></i>
+                            <h5 class="mt-2">Email</h5>
+                            <p>localizeme@gmail.com</p>
+                        </div>
+                        <div class="col-md-4 text-center mb-3">
+                            <i class="bi bi-telephone-fill fs-2 text-primary"></i>
+                            <h5 class="mt-2">Telefone</h5>
+                            <p>(31) 99999-9999</p>
+                        </div>
+                        <div class="col-md-4 text-center mb-3">
+                            <i class="bi bi-geo-alt-fill fs-2 text-primary"></i>
+                            <h5 class="mt-2">Endereço</h5>
+                            <p>Belo Horizonte, MG</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 LocalizeMe. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="registro.html" class="text-white me-3">Cadastrar Estabelecimento</a>
+                    <a href="notificacoes_admin.html" class="text-white">Admin</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+    <script src="carregarBares.js"></script>
+</body>
+
+</html>

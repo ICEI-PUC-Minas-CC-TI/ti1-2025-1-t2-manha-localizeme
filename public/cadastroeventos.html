@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Eventos</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        .form-container, .events-container {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .btn-danger {
+            background-color: #e74c3c;
+        }
+
+        .btn-danger:hover {
+            background-color: #c0392b;
+        }
+
+        .event-card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .event-card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        .event-date {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+
+        .actions {
+            margin-top: 10px;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(0,0,0,0.1);
+            border-radius: 50%;
+            border-top-color: #3498db;
+            animation: spin 1s linear infinite;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .status-message {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gerenciador de Eventos</h1>
+
+    <div class="form-container">
+        <h2>Adicionar/Editar Evento</h2>
+        <form id="event-form">
+            <input type="hidden" id="event-id">
+            <div class="form-group">
+                <label for="event-name">Nome do Evento</label>
+                <input type="text" id="event-name" required>
+            </div>
+            <div class="form-group">
+                <label for="event-description">Descrição</label>
+                <textarea id="event-description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="event-date">Data</label>
+                <input type="date" id="event-date" required>
+            </div>
+            <div id="form-status" class="status-message hidden"></div>
+            <button type="submit" id="submit-btn">Salvar Evento</button>
+            <button type="button" id="cancel-btn" class="hidden">Cancelar</button>
+        </form>
+    </div>
+
+    <div class="events-container">
+        <h2>Lista de Eventos</h2>
+        <div id="events-list"></div>
+        <div id="loading-events">Carregando eventos...</div>
+        <div id="no-events" class="hidden">Nenhum evento cadastrado.</div>
+    </div>
+
+    <script src="eventos.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #121717;
+  color: #ffffff;
+}
+
+.card {
+  color: #FFFF;
+  background-color: #1e272e;
+  border: none;
+}
+
+.btn-favorite {
+  cursor: pointer;
+}
