@@ -353,6 +353,10 @@ Esta seção apresenta todos os detalhes da solução criada no projeto.
 
 ## Vídeo do Projeto
 
+## Video de funcionalidades 
+https://drive.google.com/file/d/13KUlLa-10ldSqTp97m2twtp5r8zqnxth/view?usp=sharing
+
+## Video Promocional
 [![Vídeo do projeto](videos/apresentacao.mp4)](https://youtube.com/shorts/eeJcNIVdKcI?feature=share)
 
 ## Funcionalidades
