@@ -341,7 +341,8 @@ Divisão de papéis no grupo e apresentação da estrutura da ferramenta de cont
 | Implementação de responsividade e animação | Mateus Henrique Saturnino Gonçalves      |
 | Implementação de mapas                     | Nathan Barros de Carvalho                |
 
-![Kanban](https://trello.com/b/yILpng7m/kanban-localizeme)
+![Kanban] 
+<img src="kanban.png" alt="kanban">
 
 
 # Solução Implementada
