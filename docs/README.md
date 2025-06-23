@@ -361,7 +361,7 @@ https://drive.google.com/file/d/13KUlLa-10ldSqTp97m2twtp5r8zqnxth/view?usp=shari
 
 ## Funcionalidades
 
-Registro, explorar, favoritar, notificações, informações, comentários.
+Registro, explorar, favoritar, notificações, informações, comentários, categorias.
 
 ##### Funcionalidade 1 - Registro
 
@@ -483,10 +483,29 @@ Comente algo sobre o estabelecimento.
 
 * **Instruções de acesso:**
 
-Na tela de detalhes da cada estabelecimento, ao final dela, possui uma área de fazer os comentários, editar e excluir.
+##### Funcionalidade 7 - Categorias
+
+Página que lista os estabelecimentos filtrados pela categoria selecionada.
+
+* **Estrutura de dados:**
+  
+[
+    {
+        "id": "",
+        "nome": "  ",
+        "bairro": " ",
+        "nota": ,
+        "imagem": " ",
+        "categoria": " "
+    },
+
+* **Instruções de acesso:**
+  
+  Possivel escolher uma catelogia de estabelecimento.
   
 * **Tela da funcionalidade**:
-<img src="images/comentario.png" alt="">
+![categorias](https://github.com/user-attachments/assets/60b3e7a7-eaf6-413b-9b0a-4d02e3fc03f3)
+
 
 > **Orientações:**
 >
