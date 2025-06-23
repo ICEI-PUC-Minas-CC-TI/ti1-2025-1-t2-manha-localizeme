@@ -368,9 +368,39 @@ Registro, explorar, favoritar, notificações, informações, comentários, cate
 Tela de registro de estabelecimentos novos.
 
 * **Estrutura de dados:** 
-
+      "id": 1,
+      "nome": "",
+      "descricao": "",
+      "conteudo": "",
+      "destaque": ,
+      "imagem_principal": "",
+      "Avaliacoes": "",
+      "cardapio": "",
+      "instagram": "",
+      "endereco": "",
+      "Maps": "",
+      "categorias": [
+        
+      ],
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "",
+          "descricao": ""
+        },
+        {
+          "id": 2,
+          "src": "",
+          "descricao": ""
+        },
+        {
+          "id": 3,
+          "src": "",
+          "descricao": ""
+        }
+      ]
 * **Instruções de acesso:**
-  * 
+  Na barra de pesquisa do navegador, altere a página na URL para "gerenciar.html". 
 * **Tela da funcionalidade**:
 <img src="images/cadastro.png" alt="">
 
@@ -379,13 +409,47 @@ Tela de registro de estabelecimentos novos.
 Busque por um estabelecimento específico.
 
 * **Estrutura de dados:** 
-
+      "id": 1,
+      "nome": "",
+      "descricao": "",
+      "conteudo": "",
+      "destaque": ,
+      "imagem_principal": "",
+      "Avaliacoes": "",
+      "cardapio": "",
+      "instagram": "",
+      "endereco": "",
+      "Maps": "",
+      "categorias": [
+        
+      ],
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "",
+          "descricao": ""
+        },
+        {
+          "id": 2,
+          "src": "",
+          "descricao": ""
+        },
+        {
+          "id": 3,
+          "src": "",
+          "descricao": ""
+        }
+      ]
 * **Instruções de acesso:**
-  
+  Na página inicial, clique em "Buscar destino pelo nome..." e digite o nome do destino.
 * **Tela da funcionalidade**:
 <img src="images/explorar.png" alt="">
 
 ##### Funcionalidade 3 - Favoritar
+Guarde os seus estabelecimentos favoritos em uma aba específica.
+
+* **Estrutura de dados:**
+    
       "name": "jangal_001",
       "description": "Além dos bons petiscos, drinks e música, o Jângal foi projetado para fazer você relaxar e se divertir, juntando um espaço legal com toques de arte e cultura.",
       "adress": "Rua Outono 523",
@@ -393,9 +457,6 @@ Busque por um estabelecimento específico.
       "state": "MG",
       "country": "Brazil"
       "zipcode": "30310124"
-Guarde os seus estabelecimentos favoritos em uma aba específica.
-
-* **Estrutura de dados:**
 
 * **Instruções de acesso:**
 * Veja os bares favoritados e possibilidade de remover dos favoritos.

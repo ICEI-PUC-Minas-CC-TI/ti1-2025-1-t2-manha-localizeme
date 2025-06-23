@@ -9,23 +9,27 @@ $(function () {
                 } else {
                     console.log("Nenhum destino encontrado na API.");
                 }
+
+                // Aqui você pode chamar a função de renderizar favoritos normalmente
+                // carregarFavoritos(); // se quiser deixar rodando normalmente
             })
             .fail(() => {
                 console.error("Erro ao carregar dados da API");
             });
     });
 
+    // Função para renderizar cards de favoritos
     function renderFavoritos(destinos) {
         const $container = $("#favoritosContainer");
         if (destinos.length === 0) {
             $container.html(
-                '<div class="col-12 text-center"><p>Você ainda não favoritou nenhum bar.</p></div>',
+                '<div class="col-12 text-center"><p>Você ainda não favoritou nenhum bar.</p></div>'
             );
             return;
         }
 
         const destinosHTML = destinos
-            .slice(0, 6)
+            .slice(0, 6) // Se quiser limitar também
             .map((destino) => {
                 return `
                 <div class="col-md-4 mb-4">
@@ -64,36 +68,39 @@ $(function () {
         $container.html(destinosHTML);
     }
 
-    //filtrar só os favoritos
+
+    // Carregar estabelecimentos e filtrar só os favoritos
     function carregarFavoritos() {
         $.get("/api/estabelecimentos")
             .done((data) => {
                 const todosDestinos = data.destinos || [];
-                const favoritos = JSON.parse(
-                    localStorage.getItem("favoritos") || "[]",
-                );
+                const favoritos = JSON.parse(localStorage.getItem("favoritos") || "[]");
 
-                const destinosFavoritos = todosDestinos.filter((destino) =>
-                    favoritos.includes(destino.id),
+                // Filtrar só os destinos favoritados
+                const destinosFavoritos = todosDestinos.filter(destino =>
+                    favoritos.includes(destino.id)
                 );
 
                 renderFavoritos(destinosFavoritos);
             })
             .fail(() => {
                 $("#favoritosContainer").html(
-                    '<div class="col-12 text-center"><p>Erro ao carregar favoritos.</p></div>',
+                    '<div class="col-12 text-center"><p>Erro ao carregar favoritos.</p></div>'
                 );
             });
     }
 
+    // Evento para desfavoritar direto na lista de favoritos
     $(document).on("click", ".btn-favorite", function () {
         const $btn = $(this);
         const id = $btn.data("id");
         let favoritos = JSON.parse(localStorage.getItem("favoritos") || "[]");
 
+        // Remove dos favoritos
         favoritos = favoritos.filter((favId) => favId !== id);
         localStorage.setItem("favoritos", JSON.stringify(favoritos));
-        // lista mostrando só os favoritos restantes
+
+        // Atualiza a lista mostrando só os favoritos restantes
         carregarFavoritos();
     });
 
